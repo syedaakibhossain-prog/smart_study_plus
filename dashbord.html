@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study+ Dashboard</title>
+    <link rel="stylesheet" href="dashbord.css">
+    </head>
+    <body>
+        <header class="dash-header">
+            <h1>Smart Study+ Dashboard</h1>
+            <div class="user-info">
+            <span>Welcome, User 👋</span>
+            <button onclick="window.location.href='index.html'" class="logout">Logout</button>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <aside class="sidebar">
+                <ul>
+                    <li class="active">🏠 Home</li>
+                    <li>📚 Subjects</li>
+                    <li>🧠 Quizzes</li>
+                    <li>📈 Progress</li>
+                    <li>⚙️ Settings</li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <section id="home-section">
+                    <h2>Welcome Back!</h2>
+                    <p>Select a section from the left to start learning smarter 🚀</p>
+                </section>
+
+                <section class="cards">
+                    <div class="card">
+                    <h3>Mathematics</h3>
+                    <p>Explore topics and practice problems.</p>
+                    <button>Start Learning</button>
+                    </div>
+
+                    <div class="card">
+                    <h3>Science</h3>
+                    <p>Learn through visual and interactive lessons.</p>
+                    <button>Start Learning</button>
+                    </div>
+
+                    <div class="card">
+                    <h3>Coding</h3>
+                    <p>Master programming step by step.</p>
+                    <button>Start Learning</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="dashbord.js"></script>
+    </body>
+    
+</html>
