@@ -54,22 +54,25 @@ header input:hover{
 .search{
     height: 41px;
     width: 80px;
+    color:white;
     border-radius: 5px;
     border-style: solid;
-    border-color: black;
+    border-color: #4681f4;
     border-width: 1px;
-    background-color: white;
+    background-color:  #4681f4;
     font-size: 16px;
     cursor: pointer;
     margin-left: -5px;
     
 }
 .search:hover{
-    background-color: lightgray;
+    background-color:  #464df4;
+    border-color: #464df4 ;
     transition: background-color 0.3s;
 }
 .search:active{
-    background-color: gray;
+    ackground-color:  #03389f;
+    border-color:  #03389f;
 }
 .search:focus{
     outline: none;
@@ -239,5 +242,6 @@ html {
         width: 80%;
     }
 }
+
 
    
