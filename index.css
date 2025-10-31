@@ -4,10 +4,32 @@
 .body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+:root{
+    --primary-color: rgb(48, 48, 219);
+    --secondary-color: rgb(187, 121, 121);
+    --hover-color: rgb(28, 28, 207);
+    --active-color: rgb(8, 8, 187);
+    --bg-color: #f7f7f7;
+    --text-color: #222;
+    --card-bg: #ffffff;
+    
+}
+/* 🌙 Dark Mode Theme */
+.dark-mode {
+  --primary-color: #4681f4;
+  --secondary-color: #2d2d3a;
+  --hover-color: #5a8dee;
+  --active-color: #1a46c4;
+  --bg-color: #181a1b;
+  --text-color: #f2f2f2;
+  --card-bg: #242526;
 }
 header{
     margin: 0px;
-    background-color: rgb(187, 121, 121);
+    background-color: var(--secondary-color);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -17,10 +39,16 @@ header{
     padding: 20px;
     margin-top: 0px;
 }
+#toggle{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    border: none;
+}
 .tittle{
     padding: 0;
     font-size: 24px;
-    color: rgb(0, 0, 0);
+    color: var(--title-color);
     margin-left: -100px;
 }
 header input{
@@ -33,6 +61,7 @@ header input{
     padding: 5px;
     border-width: 1px;
     opacity: 0.35;
+    
 }
 header input::placeholder{
     font-size: 16px;
@@ -44,6 +73,7 @@ header input:focus::placeholder{
 header input:active, header input:focus{
     opacity: 1;
     transition: opacity 0.5s;
+    
     
 }
 header input:hover{
@@ -63,6 +93,7 @@ header input:hover{
     font-size: 16px;
     cursor: pointer;
     margin-left: -5px;
+    border: none;
     
 }
 .search:hover{
@@ -71,7 +102,7 @@ header input:hover{
     transition: background-color 0.3s;
 }
 .search:active{
-    ackground-color:  #03389f;
+    background-color:  #03389f;
     border-color:  #03389f;
 }
 .search:focus{
@@ -90,18 +121,18 @@ header input:hover{
     color: white;
     border-radius: 5px;
     border-style: solid;
-    border-color: rgb(48, 48, 219);
+    border-color: var(--primary-color);
     border-width: 1px;
-    background-color: rgb(48, 48, 219);
+    background-color:var(--primary-color);
     font-size: 16px;
     cursor: pointer;
 }
 .Login:hover{
-    background-color: rgb(28, 28, 207);
+    background-color: var(--hover-color);
     transition: background-color 0.3s;
 }
 .Login:active{
-    background-color: rgb(8, 8, 187);
+    background-color: var(--active-color);
 }
 .Login:focus{
     outline: none;
@@ -131,26 +162,28 @@ header input:hover{
     justify-content: space-around;
     align-items: center;
     padding: 60px 20px;
-    background-color: #f7f7f7;
+    
 }
 
 .hero-content {
     max-width: 500px;
+    
 }
 
 .hero-content h2 {
     font-size: 32px;
-    color: #222;
+    color: var(--text-color);
 }
+
 
 .hero-content p {
     margin: 15px 0;
     font-size: 18px;
-    color: #555;
+    color: var(--text-color);
 }
 
 .get-started {
-    background-color: rgb(48, 48, 219);
+    background-color: var(--primary-color);
     color: white;
     padding: 12px 25px;
     border: none;
@@ -160,7 +193,7 @@ header input:hover{
 }
 
 .get-started:hover {
-    background-color: rgb(28, 28, 207);
+    background-color: var(--hover-color);
 }
 
 .hero-img {
@@ -186,7 +219,7 @@ header input:hover{
 }
 
 .subject-card {
-    background-color: white;
+    background-color: var(--card-bg);
     border: 1px solid #ddd;
     padding: 30px;
     border-radius: 10px;
@@ -197,13 +230,13 @@ header input:hover{
 }
 
 .subject-card:hover {
-    background-color: rgb(48, 48, 219);
-    color: white;
+    background-color: var(--primary-color);
+    color:var(--card-bg);
     transform: scale(1.05);
 }
 footer {
-    background-color: rgb(48, 48, 219);
-    color: white;
+    background-color: var(--primary-color);
+    color:var(--card-bg);
     text-align: center;
     padding: 15px 0;
     margin-top: 50px;
@@ -244,4 +277,5 @@ html {
 }
 
 
+   
    
