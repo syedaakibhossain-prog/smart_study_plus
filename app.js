@@ -5,7 +5,7 @@ const icon = document.querySelector("img");
 // Load saved mode from local storage
 if(localStorage.getItem("theme") === "dark"){
     body.classList.add("dark mode");
-    icon.src ="dark theme icon/sun.png";
+    icon.src ="sun.png";
 }
 
 
@@ -15,10 +15,11 @@ togglebtn.addEventListener("click", () => {
 
     // Change icon depending on mode
     if (body.classList.contains("dark-mode")) {
-        icon.src = "dark theme icon/sun.png"; // switch to sun icon
+        icon.src = "sun.png"; // switch to sun icon
         localStorage.setItem("theme", "dark");
     } else {
-        icon.src = "dark theme icon/moon.png"; // switch back to moon icon
+        icon.src = "moon.png"; // switch back to moon icon
         localStorage.setItem("theme", "light");
     }
 });
+
