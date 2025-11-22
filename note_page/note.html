@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Forge | Notes</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+
+<body>
+
+    <!-- Background Scanlines -->
+    <div class="scanlines"></div>
+
+    <div class="notes-container">
+
+        <h1 class="title">🧠 AI Notes Generator</h1>
+
+        <!-- Input Section -->
+        <div class="input-card">
+            <label class="label">Topic / Chapter Name</label>
+            <input type="text" id="topicInput" placeholder="Enter topic…">
+
+            <label class="label">Description (Optional)</label>
+            <textarea id="descInput" placeholder="Describe what type of notes you want…"></textarea>
+
+            <button class="generate-btn">Generate Notes</button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-card">
+            <h2>Generated Notes</h2>
+            <div id="notesOutput" class="notes-box">
+                <p class="placeholder">Your notes will appear here...</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
